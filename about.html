@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Sonam Wangmo Tamang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section">
+    <div class="about-container">
+        <img src="photo_2025-09-20_20-39-10.jpg" alt="Sonam" class="profile-pic">
+        <div>
+            <h2>About Me</h2>
+            <p>Hello! I am Sonam Wangmo Tamang, an aspiring web developer and ICT enthusiast currently studying B.Ed ICT at Samtse College of Education. I enjoy creating websites and learning new technologies.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Sonam Wangmo Tamang</p>
+</footer>
+
+<!-- Script -->
+<script>
+// Active Navigation Highlight
+const navLinks = document.querySelectorAll("nav ul li a");
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+    });
+});
+</script>
+</body>
+</html>
